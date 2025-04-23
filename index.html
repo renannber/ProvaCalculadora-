@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GASTOS MENSAIS </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    
+    <form id="form-gasto">
+        <label for="descricao">Descrição da despesa:</label>
+        <input type="text" id="descricao" name="descricao" required>
+      
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" required>
+      
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+          <option value="alimentacao">Alimentação</option>
+          <option value="transporte">Transporte</option>
+          <option value="saude">Saúde</option>
+          <option value="lazer">Lazer</option>
+          <option value="outros">Outros</option>
+        </select>
+      
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+      
+        <button type="submit">Adicionar Despesa</button>
+        <script src='script.js'></script>
+      </form>
 </body>
 </html>
